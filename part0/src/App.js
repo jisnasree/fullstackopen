@@ -4,9 +4,9 @@ import Total from './Total';
 import './App.css';
 
 const App = () => {
-  const course = "Half Stack Application Development"
-
-  const parts=[
+  const course = {
+  name: "Half Stack Application Development",
+  parts:[
   {
     name:"Fundamentals of React",
     exercises:10
@@ -21,11 +21,12 @@ const App = () => {
     name: "State of a component",
     exercises :14
   }]
+} 
   return (
     <div className="wrapper">
-     <Header course={course}/>
-     <Content parts={parts}/>
-     <Total parts={parts}/>
+     <Header course={course.name}/>
+     <Content parts={course.parts}/>
+     <Total parts={course.parts}/>
     </div>
   );
 }
