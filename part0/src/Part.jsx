@@ -1,8 +1,8 @@
 const Part = (props) =>{
     return(
-        <div>
+        <div className="content">
             <h2>{props.part}</h2>
-            <p>{props.exercise}</p>
+            <p>{props.exercises}</p>
         </div>
     )
 }
